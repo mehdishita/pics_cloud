@@ -1,0 +1,29 @@
+version: "2.1"
+
+networks:
+  nextcloud_frontend:
+      external: true
+
+services:
+  swag:
+    image: lscr.io/linuxserver/swag:latest
+    container_name: swag
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Canada/Eastern
+      - URL=yourdomain.duckdns.org
+      - SUBDOMAINS=wildcard
+      - VALIDATION=duckdns
+      - DUCKDNSTOKEN=
+      - EMAIL= henri.delille.dh@gmail.com
+    volumes:
+      - /docker/swag/config:/config
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+    networks:
+      - nextcloud_frontend    
