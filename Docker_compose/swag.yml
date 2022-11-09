@@ -14,10 +14,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Montreal
-      - URL=yourdomain.duckdns.org
+      - URL=pics-cloud.duckdns.org
       - SUBDOMAINS=wildcard
       - VALIDATION=duckdns
-      - DUCKDNSTOKEN=
+      - DUCKDNSTOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
       - EMAIL= henri.delille.dh@gmail.com
     volumes:
       - /docker/swag/config:/config
