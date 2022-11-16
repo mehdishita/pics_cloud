@@ -1,8 +1,8 @@
 version: "2.1"
 
 networks:
-  frontend:
-      name: frontend_picsCloud
+  frontend_picsCloud:
+    name: frontend_picsCloud
 
 services:
   swag:
@@ -26,4 +26,4 @@ services:
       - 443:443
     restart: always
     networks:
-      - frontend_picsCloud   
+      - frontend_picsCloud
