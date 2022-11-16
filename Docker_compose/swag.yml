@@ -1,8 +1,8 @@
 version: "2.1"
 
 networks:
-  nextcloud_frontend:
-      external: true
+  frontend:
+      name: frontend_picsCloud
 
 services:
   swag:
@@ -20,10 +20,10 @@ services:
       - DUCKDNSTOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
       - EMAIL= henri.delille.dh@gmail.com
     volumes:
-      - /docker/swag/config:/config
+      - /docker_file/swag/config:/config
     ports:
       - 80:80
       - 443:443
-    restart: unless-stopped
+    restart: always
     networks:
-      - nextcloud_frontend    
+      - frontend_picsCloud   

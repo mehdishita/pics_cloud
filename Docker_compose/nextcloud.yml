@@ -1,7 +1,8 @@
 version: "3.8"
 
 networks:
-  frontend:
+  frontend_picsCloud:
+    external:
   backend:
 
 services:
@@ -19,8 +20,8 @@ services:
     image: nextcloud:latest
     restart: unless-stopped
     volumes:
-      - /docker-data/nextcloud-app/var/www/html:/var/www/html
-      - /photo:/photo
+      - /docker_file/nextcloud-app/var/www/html:/var/www/html
+      - /home/henri/photo:/photo
     networks:
       - frontend
       - backend
@@ -38,7 +39,7 @@ services:
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --skip-innodb-read-only-compressed
     restart: unless-stopped
     volumes:
-      - /home/henri/docker-data/nextcloud-db/var/lib/mysql:/var/lib/mysql
+      - /home/docker_file/nextcloud-db/var/lib/mysql:/var/lib/mysql
     networks:
       - backend
       
