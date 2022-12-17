@@ -18,7 +18,7 @@ services:
       - SUBDOMAINS=wildcard
       - VALIDATION=duckdns
       - DUCKDNSTOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
-      - EMAIL= henri.delille.dh@gmail.com
+      - EMAIL=henri.delille.dh@gmail.com
     volumes:
       - /docker_file/swag/config:/config
     ports:
