@@ -1,4 +1,4 @@
-# PICS-Ccloud
+# PICS-Cloud
  
 Auteurs : 
 * Mehdi Shita
@@ -9,8 +9,8 @@ Auteurs :
 
 ## Prérequis :
 
-_Compte Google Cloud Platform_
-_VM Debian 11 avec Docker et Docker Compose_
+1. _Compte Google Cloud Platform_
+2. _VM Debian 11 avec Docker et Docker Compose_
 
 ## Installation :
 1. Dans le dossier Docker Compose modifier les fichiers pour qu'ils correspondent à vos paramètres
