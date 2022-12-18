@@ -20,8 +20,8 @@ services:
     image: nextcloud:latest
     restart: unless-stopped
     volumes:
-      - /docker_file/nextcloud-app/var/www/html:/var/www/html
-      - /photo:/photo
+      - /home/Henri/docker_file/nextcloud-app/var/www/html:/var/www/html
+      - /home/Henri/photo:/photo
     networks:
       - frontend_picsCloud
       - backend_nextcloud
@@ -40,7 +40,7 @@ services:
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --skip-innodb-read-only-compressed
     restart: unless-stopped
     volumes:
-      - /docker_file/nextcloud-db/var/lib/mysql:/var/lib/mysql
+      - /home/Henri/docker_file/nextcloud-db/var/lib/mysql:/var/lib/mysql
     networks:
       - backend_nextcloud
 

@@ -20,7 +20,7 @@ services:
       - DUCKDNSTOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
       - EMAIL=henri.delille.dh@gmail.com
     volumes:
-      - /docker_file/swag/config:/config
+      - /home/Henri/docker_file/swag/config:/config
     ports:
       - 80:80
       - 443:443
