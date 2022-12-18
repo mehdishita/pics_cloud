@@ -1,0 +1,13 @@
+version: "2.1"
+services:
+  duckdns:
+    image: lscr.io/linuxserver/duckdns:latest
+    container_name: duckdns
+    environment:
+      - TZ=America/Montreal
+      - SUBDOMAINS=pics-cloud.duckdns.org
+      - TOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
+      - LOG_FILE=false #optional
+    volumes:
+      - /home/Henri/docker_file/duckdns/config:/config #optional
+    restart: unless-stopped
