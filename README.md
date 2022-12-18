@@ -1,3 +1,3 @@
 # pics_cloud
  
-# Adresse IP : 104.45.194.12
+# Adresse IP : cloud.pics-cloud.duckdns.org
