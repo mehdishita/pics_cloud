@@ -1,0 +1,9 @@
+version: "2.1"
+services:
+  duckdns:
+    image: debian:latest
+    container_name: debianIA
+    volumes:
+      - /home/Henri/docker_file/debianIA:/pics
+    restart: unless-stopped
+    
