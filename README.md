@@ -10,7 +10,7 @@ Auteurs :
 ## Prérequis :
 
 1. _Compte Google Cloud Platform_
-2. _VM Debian 11 avec Docker et Docker Compose_
+2. _VM Debian 11 avec Docker et Docker Compose d'installer_
 
 ## Installation :
 1. Dans le dossier Docker Compose modifier les fichiers pour qu'ils correspondent à vos paramètres

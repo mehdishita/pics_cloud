@@ -6,7 +6,7 @@ services:
     environment:
       - TZ=America/Montreal
       - SUBDOMAINS=pics-cloud.duckdns.org
-      - TOKEN=9251beb7-9d03-4f67-bf72-54c7d43ce19b
+      - TOKEN=PAST-TOKEN
       - LOG_FILE=false #optional
     volumes:
       - /home/Henri/docker_file/duckdns/config:/config #optional
