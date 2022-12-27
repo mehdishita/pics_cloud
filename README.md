@@ -17,3 +17,4 @@ Auteurs :
 2. Dans la VM exécuter, ```docker compose -f swag.yml up```
 3. Dans la VM exécuter, ```docker compose -f nexcloud.yml up```
 4. Dans la VM exécuter, ```docker compose -f duckdns.yml up```
+5. Intaller python, ainsi que les dépendances nécessaire avec ```pip3 install ```
